@@ -1,10 +1,8 @@
-#include <stdio.h>
-/**
- * main - A program that prints a line with printf
- * Return : 0 (Success)
- */
-int main(void)
-{
-	printf("with proper grammar, but the outcome is a piece of art,\n")
-	return (0);
-}
+0-preprocessor
+1-compiler
+2-assembler
+3-name
+4-puts.c
+5-printf.c
+a.out
+README.md
