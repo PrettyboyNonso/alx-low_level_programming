@@ -15,14 +15,13 @@ int main(void)
 {
 	char lowercase;
 
-	
 	/* your code goes there */
 	lowercase = 'a';
 	while (lowercase < 123)
 	{
 	putchar(lowercase);
-	putchar('\n');
 	lowercase++;
 	}
+	putchar('\n');
 	return (0);
 }
