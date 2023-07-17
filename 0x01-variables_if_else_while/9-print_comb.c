@@ -18,8 +18,13 @@ for (x = 0; x <= 9; x++)
 {
 int newcount = '0' + x;
 putchar(newcount);
+
+if (x < 9)
+{
 putchar(',');
 putchar(' ');
+
+}
 
 }
 
