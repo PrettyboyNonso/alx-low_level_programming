@@ -22,6 +22,6 @@ continue;
 putchar(lowcase);
 lowcase++;
 }
-
+putchar('\n');
 return (0);
 }
