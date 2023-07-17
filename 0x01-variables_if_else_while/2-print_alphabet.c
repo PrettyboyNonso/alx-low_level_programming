@@ -13,7 +13,6 @@
  */
 int main(void)
 {
-	int n;
 	char lowercase;
 
 	
