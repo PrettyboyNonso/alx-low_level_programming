@@ -16,8 +16,7 @@ int main(void)
 	int n;
 	char lowercase;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	
 	/* your code goes there */
 	lowercase = 'a';
 	while (lowercase < 123)
