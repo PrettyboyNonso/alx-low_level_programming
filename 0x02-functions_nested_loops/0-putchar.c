@@ -1,20 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - Enty of the code
  *
- * Return: Always 0.
+ * printout - prints out a code
+ *
+ * @void: function does not have a parameter
+ *
+ * Return: 0.
  */
-int printout(void)
-{
-	printf("_putchar");
-	return (0);
-
-}
 
 int main(void)
 {
-	printout();
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 	return (0);
+
 
 }
