@@ -16,11 +16,10 @@ void print_alphabet_x10(void)
 	first = 'a';
 	for (a = 0; a <= 9; a++)
 	{
-		for (first = 'a'; first <= 'z'; first++)
-		{
-			_putchar(first);
-		
-		}
+	for (first = 'a'; first <= 'z'; first++)
+	{
+	_putchar(first);
+	}
 	_putchar('\n');
 	}
 }
