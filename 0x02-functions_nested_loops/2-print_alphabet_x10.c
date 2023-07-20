@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Entry point 
+ * print_alphabet_x10 - Entry point
  *
  * Description: prints 10x
  *
@@ -21,6 +21,6 @@ void print_alphabet_x10(void)
 			_putchar(first);
 		
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
