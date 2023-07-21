@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include "main.h"
 /**
- * fizzbuzz - Entry point
+ * main - Entry point
  *
  * @void: function parameter is empty
  *
  * Return: always 0
  */
-void fizzbuzz(void)
+int main(void)
 {
 int i;
 
@@ -31,4 +30,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
+return (0);
 }
