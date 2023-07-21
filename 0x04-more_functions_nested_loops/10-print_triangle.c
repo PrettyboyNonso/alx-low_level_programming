@@ -10,19 +10,24 @@
 
 void print_triangle(int size)
 {
-	int row, column;
+int i, j;
 
-	if (size <= 0)
-	{
+if (size <= 0) 
+{
 	_putchar('\n');
 	return;
-	}
-	for (row = 1; row <= size; row++)
+}
+
+for (i = 1; i <= size; i++)
+{
+	for (j = 1; j <= size - i; j++)
 	{
-	for (column = 1; column <= row; column++)
+	_putchar(' ');
+	}
+	for (j = 1; j <= i; j++)
 	{
 	_putchar('#');
 	}
 	_putchar('\n');
-	}
+    }
 }
