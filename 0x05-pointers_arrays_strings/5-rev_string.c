@@ -9,10 +9,10 @@
  */
 void rev_string(char *s)
 {
-	char *start; 
+	char *start;
 	char *end;
 	char temp;
-	
+
 	if (s == NULL)
 	return;
 
