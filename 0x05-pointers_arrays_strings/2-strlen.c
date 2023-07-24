@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int _strlen - Entry point
+ * _strlen - Entry point
  *
- * @*s: function parameter
+ * @s: function parameter
  *
  * Return: always 0
  */
