@@ -7,27 +7,26 @@
  *
  * Return: always 0
  */
-
 void rev_string(char *s)
 {
+	char *start; 
+	char *end;
+	char temp;
+	
 	if (s == NULL)
 	return;
-
-	char *start;
-	char *end;
 
 	start = s;
 	end = s;
 
 	while (*end != '\0')
-	{
 	end++;
-	}
+
 	end--;
-	
+
 	while (start < end)
 	{
-	char temp = *start;
+	temp = *start;
 	*start = *end;
 	*end = temp;
 
