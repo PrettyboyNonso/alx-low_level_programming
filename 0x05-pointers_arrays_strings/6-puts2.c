@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <ctype.h>
 /**
  * puts2 - Entry point
  *
