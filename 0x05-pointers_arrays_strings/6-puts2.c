@@ -16,10 +16,11 @@ void puts2(char *str)
 	if (str == NULL)
 	return;
 
-	while (str[i] != '\0')
+	while (str[i] != '\0' && str[i + 1] != '\0')
 	{
 	if (isprint(str[i]))
 	_putchar(str[i]);
+
 	i += 2;
 	}
 
