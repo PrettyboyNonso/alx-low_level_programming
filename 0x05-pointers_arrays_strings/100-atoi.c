@@ -6,11 +6,12 @@
  *
  * Return: always 0
  */
+
 int _atoi(char *s)
 {
-	long int sign = 1;
-	long int result = 0;
-	int digit;
+	long sign = 1;
+	long result = 0;
+	long digit;
 
 	while (*s)
 	{
@@ -27,5 +28,5 @@ int _atoi(char *s)
 	s++;
 	}
 
-	return (int)(result * sign);
+	return (result * sign);
 }
