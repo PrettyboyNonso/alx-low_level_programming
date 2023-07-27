@@ -12,7 +12,7 @@ char *leet(char *str)
 {
 	char leet_table[256] = {0};
 	char *leet_chars = "aAeEoOtTlL";
-	char *leet_replacements = "44371011";
+	char *leet_replacements = "4433007711";
 
 	int i, j;
 
