@@ -12,20 +12,21 @@ char *leet(char *str)
 {
 	char leet_table[256] = {0};
 	char *leet_chars = "aAeEoOtTlL";
-	char *leet_replacements = "44337011";
+	char *leet_replacements = "44371011";
 
-	int i;
-	char *ptr;
+	int i, j;
 
-	for (i = 0; leet_chars[i] != '\0'; i++)
+	for (j = 0; leet_chars[j]; j++)
 	{
-	leet_table[(unsigned char)leet_chars[i]] = leet_replacements[i];
+	leet_table[(unsigned char)leet_chars[j]] = leet_replacements[j];
 	}
 
-	for (ptr = str; *ptr != '\0'; ptr++)
+	for (i = 0; str[i]; i++)
 	{
-	*ptr = leet_table[(unsigned char)*ptr];
+	if (leet_table[(unsigned char)str[i]])
+	{
+	str[i] = leet_table[(unsigned char)str[i]];
 	}
-
+	}
 	return (str);
 }
