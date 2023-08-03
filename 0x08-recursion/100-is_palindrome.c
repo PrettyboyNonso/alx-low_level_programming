@@ -9,7 +9,9 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	int len = _strlen(s);
+	int len;
+
+	len = _strlen(s);
 	return (is_palindrome_recursive(s, 0, len - 1));
 }
 
