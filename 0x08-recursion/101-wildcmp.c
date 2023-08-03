@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * wildcmp - Entry
+ * @s2: param
+ * @s1: param
+ * Return: always 0
+ */
 int wildcmp(char *s1, char *s2);
 
 int wildcmp(char *s1, char *s2)
