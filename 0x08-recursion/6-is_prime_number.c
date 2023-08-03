@@ -1,9 +1,6 @@
 #include "main.h"
 /**
  * is_prime_number - Another function
- * is_divisible - Entry
- * @n: param
- * @divisor: param
  * @n: param
  * Return: always 0
  */
@@ -18,7 +15,12 @@ int is_prime_number(int n)
 	}
 	return (!is_divisible(n, n - 1));
 }
-
+/**
+ * is_divisible - Entry
+ * @n: param
+ * @divisor: param
+ * Return: always 0
+ */
 int is_divisible(int n, int divisor)
 {
 	if (divisor == 1)
