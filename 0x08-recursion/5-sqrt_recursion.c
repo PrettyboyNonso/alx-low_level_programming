@@ -7,6 +7,10 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+	if (n == 0 || n == 1)
+	{
+		return (n);
+	}
 	return (sqrt_recursive(n, n / 2));
 }
 
@@ -21,3 +25,4 @@ int sqrt_recursive(int n, int guess)
 
 	return (sqrt_recursive(n, new_guess));
 }
+
