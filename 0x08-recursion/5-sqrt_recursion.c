@@ -1,5 +1,5 @@
 #include "main.h"
-int find_sqrt(int n, int start, int end);
+int sqrt_recursive(int n, int guess);
 
 int _sqrt_recursion(int n)
 {
@@ -7,28 +7,17 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (find_sqrt(n, 0, n));
+	return (sqrt_recursive(n, n / 2));
 }
 
-int find_sqrt(int n, int start, int end)
+int sqrt_recursive(int n, int guess)
 {
-	int mid = (start + end) / 2;
+	int new_guess = (guess + n / guess) / 2;
 
-	if (start <= end)
+	if (new_guess == guess || new_guess > guess)
 	{
-		int square = mid * mid;
-		if (square == n)
-		{
-			return (mid);
-		}
-		else if (square < n)
-		{
-			return (find_sqrt(n, mid + 1, end));
-		}
-		else
-		{
-			return (find_sqrt(n, start, mid - 1));
-		}
+		return (guess);
 	}
-	return (end);
+
+	return (sqrt_recursive(n, new_guess));
 }
