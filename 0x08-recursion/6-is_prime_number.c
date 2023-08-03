@@ -1,9 +1,9 @@
 #include "main.h"
 /**
+ * is_prime_number - Another function
  * is_divisible - Entry
  * @n: param
  * @divisor: param
- * is_prime_number - Entry
  * @n: param
  * Return: always 0
  */
