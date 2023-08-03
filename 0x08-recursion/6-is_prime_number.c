@@ -2,6 +2,8 @@
 /**
  * is_prime_number - Another function
  * @n: param
+ * @divisor: param
+ * @n: param
  * Return: always 0
  */
 
@@ -17,7 +19,6 @@ int is_prime_number(int n)
 }
 /**
  * is_divisible - Entry
- * @divisor: param
  * Return: always 0
  */
 int is_divisible(int n, int divisor)
