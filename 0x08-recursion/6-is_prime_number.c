@@ -19,6 +19,7 @@ int is_prime_number(int n)
 }
 /**
  * is_divisible - Entry
+ * @divisor: param
  * Return: always 0
  */
 int is_divisible(int n, int divisor)
