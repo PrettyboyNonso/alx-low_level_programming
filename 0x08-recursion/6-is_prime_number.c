@@ -3,7 +3,7 @@
  * is_divisible - Entry
  * @n: param
  * @divisor: param
- * is_prime - Entry
+ * is_prime_number - Entry
  * @n: param
  * Return: always 0
  */
@@ -14,7 +14,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
-		return 0;
+		return (0);
 	}
 	return (!is_divisible(n, n - 1));
 }
