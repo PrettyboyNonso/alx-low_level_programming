@@ -1,5 +1,5 @@
 #include "main.h"
-
+int find_sqrt(int n, int start, int end);
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
