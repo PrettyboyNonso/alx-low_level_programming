@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * _isupper - Entry point
+ *  _isupper - Entry point
  *
  *@c:  parameter to print
  *
