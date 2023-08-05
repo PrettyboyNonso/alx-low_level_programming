@@ -6,7 +6,7 @@
  * @args: param
  * Return: always 0
  */
-int main (int args, char *argv[])
+int main(int args, char *argv[])
 {
 (void)argv;
 printf("%d\n", args - 1);
