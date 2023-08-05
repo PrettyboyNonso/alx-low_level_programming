@@ -18,12 +18,10 @@ if (argc != 3)
 printf("Error\n");
 return (1);
 }
-else
-{
+
 one = atoi(argv[1]);
 two = atoi(argv[2]);
 result = one * two;
 printf("%d\n", result);
 return (0);
-}
 }
