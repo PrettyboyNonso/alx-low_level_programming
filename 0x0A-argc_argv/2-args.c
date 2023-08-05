@@ -8,14 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-int arry_size;
 int i;
 
-arry_size = sizeof(argv)/sizeof(argv[0]);
-for (i = 0; i <= arry_size; i++)
+for (i = 0; i < argc; i++)
 {
-printf("%c\n", argv[i]);
-return (0);
+printf("%s\n", argv[i]);
 }
-
+return (0);
 }
