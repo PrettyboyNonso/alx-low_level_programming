@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * * _isdigit - Entry point
+ * _isdigit - Entry point
  *
  * Description: prints digits
  *
