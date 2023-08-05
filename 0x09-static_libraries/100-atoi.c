@@ -28,9 +28,9 @@ int _atoi(char *s)
 	if (result < prev_result)
 	{
 	if (sign == 1)
-	return INT_MAX;
+	return (INT_MAX);
 	else
-	return INT_MIN;
+	return (INT_MIN);
 	}
 	}
 	else if (result != 0)
