@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * main - Entry point
- * @argc: param
  * @argv: param
+ * @argc: param
  * Return: always 0
  */
 int main (int argc, char *argv[])
