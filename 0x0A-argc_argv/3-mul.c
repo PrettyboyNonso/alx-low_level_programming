@@ -21,7 +21,7 @@ return (1);
 
 one = atoi(argv[1]);
 two = atoi(argv[2]);
-result = one * two;
+result = one *two;
 printf("%d\n", result);
 return (0);
 }
