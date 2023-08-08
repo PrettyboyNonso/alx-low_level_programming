@@ -11,11 +11,13 @@ char *_strdup(char *str)
 	int i;
 	int j;
 	int iteration_count;
+	char *duplicate;
 
 	if (str == NULL)
 	{
 	return (NULL);
 	}
+
 	iteration_count = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -23,7 +25,8 @@ char *_strdup(char *str)
 	iteration_count += 1;
 	}
 
-	char *duplicate = malloc(sizeof(char) * (iteration_count) + 1);
+	duplicate = malloc(sizeof(char) * (iteration_count) + 1);
+
 	if (duplicate == NULL)
 	{
 	return (NULL);
