@@ -18,14 +18,14 @@ char *loop_runner(char *x, char *y, char *memory_space)
 	{
 	memory_space[l] = x[l];
 	}
-	
+
 	for (m = 0; y[m] != '\0'; m++)
 	{
 	memory_space[l] = y[m];
 	l++;
 	}
 	 memory_space[l] = '\0';
-	 return (memory_space);
+	return (memory_space);
 }
 
 /**
@@ -41,6 +41,7 @@ char *str_concat(char *s1, char *s2)
 	int iterration_2;
 	int j;
 	char *concat_string;
+
 	if (s1 == NULL)
 	{
 	s1 = "";
