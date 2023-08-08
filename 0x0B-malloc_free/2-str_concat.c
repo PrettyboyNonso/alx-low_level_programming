@@ -64,10 +64,11 @@ char *str_concat(char *s1, char *s2)
 	if (concat_string != NULL)
 	{
 	loop_runner(s1, s2, concat_string);
-	return (concat_string);
+
 	}
 	else
 	{
 	return (NULL);
 	}
+	return (concat_string);
 }
