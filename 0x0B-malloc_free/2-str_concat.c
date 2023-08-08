@@ -12,10 +12,9 @@
 void *loop_runner(char *x, char *y, char *memory_space)
 {
 	int l;
-	l = 0;
 	int m;
 
-	for (l; x[l] != '\0'; l++)
+	for (l = 0; x[l] != '\0'; l++)
 	{
 	memory_space[l] = x[l];
 	}
