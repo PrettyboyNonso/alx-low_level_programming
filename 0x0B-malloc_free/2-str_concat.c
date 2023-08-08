@@ -63,7 +63,7 @@ char *str_concat(char *s1, char *s2)
 	concat_string = malloc((sizeof(char) * (iterration_1 + iterration_2)) + 1);
 	if (concat_string != NULL)
 	{
-	loop_runner(s1, s2, concat_string);
+	return (loop_runner(s1, s2, concat_string));
 
 	}
 	else
