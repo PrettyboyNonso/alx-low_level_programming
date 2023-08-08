@@ -9,7 +9,7 @@
  * Return: always 0
  */
 
-void *loop_runner(char *x, char *y, char *memory_space)
+char *loop_runner(char *x, char *y, char *memory_space)
 {
 	int l;
 	int m;
@@ -24,7 +24,8 @@ void *loop_runner(char *x, char *y, char *memory_space)
 	memory_space[l] = y[m];
 	l++;
 	}
-	memory_space[l] = '\0';
+	 memory_space[l] = '\0';
+	 return (memory_space);
 }
 
 /**
