@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
         row_pointer[i] = (int *)malloc(width * sizeof(int));
 	if (row_pointer[i] == NULL)
             {
-                // Free previously allocated memory and return NULL
+        
                 for (k = 0; k < i; k++)
                 {
                     free(row_pointer[k]);
