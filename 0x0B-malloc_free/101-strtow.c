@@ -1,28 +1,16 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-int is_space(char c);
-int count_words(char *str);
-char **strtow(char *str);
-
-int is_space(char c)
-{
-    return c == ' ' || c == '\t' || c == '\n';
-}
+#include <ctype.h>
 
 int count_words(char *str)
 {
-    int word_count;
-    int in_word;
+    int word_count = 0;
+    int in_word = 0;
     int i;
-
-    word_count = 0;
-    in_word = 0;
 
     for (i = 0; str[i] != '\0'; i++)
     {
-        if (!is_space(str[i]))
+        if (!isspace(str[i]))
         {
             if (!in_word)
             {
@@ -68,7 +56,7 @@ char **strtow(char *str)
 
     for (i = 0; str[i] != '\0'; i++)
     {
-        if (!is_space(str[i]))
+        if (!isspace(str[i]))
         {
             if (word_start == -1)
             {
@@ -124,3 +112,4 @@ char **strtow(char *str)
 
     return words;
 }
+
