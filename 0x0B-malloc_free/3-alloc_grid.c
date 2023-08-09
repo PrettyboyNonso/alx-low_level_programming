@@ -32,15 +32,10 @@ int **alloc_grid(int width, int height)
                 row_pointer[i][j] = 0;
         }
         }
-        return (row_pointer);
 	}
 	else
-{
-    for (i = 0; i < height; i++)
-    {
-        free(row_pointer[i]);
-    }
-    free(row_pointer);
-    return (NULL);
-}
+	{
+	return (NULL);
+	}
+	return (row_pointer);
 }
