@@ -4,20 +4,22 @@
 
 char *argstostr(int ac, char **av)
 {
-    int total_length, i, current_index;
+    int total_length;
+    int i, current_index;
 	char *result;
+	total_length = 0;
+
     if (ac == 0 || av == NULL)
     {
         return (NULL);
     }
 
-    total_length = 0;
     for (i = 0; i < ac; i++)
     {
         total_length += strlen(av[i]) + 1;
     }
 
-    result = (char *)malloc(total_length * sizeof(char));
+    result = (char *)malloc((total_length + 1) * sizeof(char));
     if (result == NULL)
     {
         return (NULL);
@@ -31,6 +33,7 @@ char *argstostr(int ac, char **av)
         result[current_index] = '\n';
         current_index++;
     }
-	result[total_length] = '\0';
+    result[total_length] = '\0';
+
     return (result);
 }
