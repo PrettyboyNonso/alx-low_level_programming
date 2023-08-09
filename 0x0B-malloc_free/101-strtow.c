@@ -13,9 +13,12 @@ int is_space(char c)
 
 int count_words(char *str)
 {
-    int word_count = 0;
-    int in_word = 0;
+    int word_count;
+    int in_word;
     int i;
+
+    word_count = 0;
+    in_word = 0;
 
     for (i = 0; str[i] != '\0'; i++)
     {
@@ -44,6 +47,8 @@ char **strtow(char *str)
     int word_start;
     int i;
     int word_length;
+    int l;
+    int k;
 
     if (str == NULL || str[0] == '\0')
     {
@@ -78,7 +83,7 @@ char **strtow(char *str)
                 words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
                 if (words[word_index] == NULL)
                 {
-                    for (int k = 0; k < word_index; k++)
+                    for (k = 0; k < word_index; k++)
                     {
                         free(words[k]);
                     }
@@ -101,9 +106,9 @@ char **strtow(char *str)
         words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
         if (words[word_index] == NULL)
         {
-            for (int k = 0; k < word_index; k++)
+            for (l = 0; l < word_index; l++)
             {
-                free(words[k]);
+                free(words[l]);
             }
             free(words);
             return NULL;
