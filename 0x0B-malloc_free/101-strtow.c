@@ -21,12 +21,16 @@ int count_words(char *str)
         }
         else
         {
-            in_word = 0;
+            if (in_word)
+            {
+                in_word = 0;
+            }
         }
     }
 
     return word_count;
 }
+
 
 char **strtow(char *str)
 {
