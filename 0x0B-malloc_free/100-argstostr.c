@@ -5,7 +5,7 @@
 char *argstostr(int ac, char **av)
 {
     int total_length, i, current_index;
-
+	char *result;
     if (ac == 0 || av == NULL)
     {
         return (NULL);
@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
         total_length += strlen(av[i]) + 1;
     }
 
-    char *result = (char *)malloc(total_length * sizeof(char));
+    result = (char *)malloc(total_length * sizeof(char));
     if (result == NULL)
     {
         return (NULL);
