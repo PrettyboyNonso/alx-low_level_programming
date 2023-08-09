@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -36,6 +37,7 @@ char **strtow(char *str)
     int i;
     int word_length;
     int l;
+    int k;
 
     if (str == NULL || str[0] == '\0')
     {
@@ -43,6 +45,17 @@ char **strtow(char *str)
     }
 
     num_words = count_words(str);
+
+    if (num_words == 0)
+    {
+        words = (char **)malloc(1 * sizeof(char *));
+        if (words == NULL)
+        {
+            return NULL;
+        }
+        words[0] = NULL;
+        return words;
+    }
 
     words = (char **)malloc((num_words + 1) * sizeof(char *));
     if (words == NULL)
@@ -70,9 +83,9 @@ char **strtow(char *str)
                 words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
                 if (words[word_index] == NULL)
                 {
-                    for (l = 0; l < word_index; l++)
+                    for (k = 0; k < word_index; k++)
                     {
-                        free(words[l]);
+                        free(words[k]);
                     }
                     free(words);
                     return NULL;
@@ -89,7 +102,7 @@ char **strtow(char *str)
 
     if (word_start != -1)
     {
-        word_length = i - word_start;
+        word_length = strlen(str) - word_start;
         words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
         if (words[word_index] == NULL)
         {
@@ -111,4 +124,3 @@ char **strtow(char *str)
 
     return words;
 }
-
