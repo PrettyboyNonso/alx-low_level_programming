@@ -31,9 +31,12 @@ char **strtow(char *str)
 {
     int num_words;
     char **words;
-    int word_index = 0;
-    int word_start = -1;
-    int i, word_length, k, l;
+    int word_index;
+    int word_start;
+    int i;
+    int word_length;
+    int l;
+    int k;
 
     if (str == NULL || str[0] == '\0')
     {
@@ -47,6 +50,9 @@ char **strtow(char *str)
     {
         return NULL;
     }
+
+    word_index = 0;
+    word_start = -1;
 
     for (i = 0; str[i] != '\0'; i++)
     {
