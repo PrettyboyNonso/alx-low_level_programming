@@ -1,10 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+/**
+ * string_nconcat - Entry point
+ * @s1: param
+ * @s2: param
+ * @n:param
+ * Return: pointer always
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_string;
-	int itteration_one = 0;
-	int itteration_two = 0;
+	int itteration_one, itteration_two;
+
+	itteration_one = 0;
+	itteration_two = 0;
+	int i, j;
+
 	if (s1 == NULL)
 	{
 	s1 = "";
@@ -24,45 +36,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= itteration_two)
 	{
-	new_string = malloc(sizeof(char) * (itteration_one + itteration_two + 1));
-	if (new_string == NULL)
-	{
-	return NULL;
+	check_if(new_string, itteration_one, itteration_two, n, s1, s2);
 	}
-	for (int l = 0; l < (itteration_one + itteration_two); l++)
-	{
-	if (l == (itteration_one))
-	{
-	for (int m = 0; m < itteration_two; m++)
-	{
-	new_string[l] = s2[m];
-	l++;
-	}
-	}
-	new_string[l] = s1[l];
-	}
-	new_string[itteration_one + itteration_two] = '\0';
-	}
+
 	else
 	{
-	new_string = malloc(sizeof(char) * ((itteration_one + n) + 1));
-	if (new_string == NULL)
-	{
-	return NULL;
+	check_else(new_string, itteration_one, n, s1, s2);
 	}
-	for (int k = 0; k < (itteration_one + n); k++)
-	{
-	if (k == (itteration_one))
-	{
-	for (int j = 0; j < n; j++)
-	{
-	new_string[k] = s2[j];
-	k++;
-	}
-	}
-	new_string[k] = s1[k];
-	}
-	new_string[itteration_one + n] = '\0';
-	}
-	return new_string;
 }
