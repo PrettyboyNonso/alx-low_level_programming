@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * malloc - Entry point
+ * malloc_checked - Entry point
  * @b: param
  * Return: pointer always
  */
