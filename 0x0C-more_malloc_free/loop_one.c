@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-char *check_if(char *ptr, int count_one, int count_two, int n, char *s1, char *s2)
+char *check_if(char *ptr, int count_one, int count_two, char *s1, char *s2)
 {
 	int l, m;
 
@@ -9,12 +9,12 @@ char *check_if(char *ptr, int count_one, int count_two, int n, char *s1, char *s
 	{
 	return (NULL);
 	}
-	for (int l = 0; l < (count_one + count_one); l++)
+	for (l = 0; l < (count_one + count_two); l++)
 	{
 
 	if (l == (count_one))
 	{
-	for (int m = 0; m < count_two; m++)
+	for (m = 0; m < count_two; m++)
 	{
 	ptr[l] = s2[m];
 	l++;
