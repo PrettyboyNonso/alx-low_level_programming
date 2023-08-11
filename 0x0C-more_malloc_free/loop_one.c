@@ -1,5 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * check_if - Entry point
+ * @ptr: param
+ * @count_one: param
+ * @count_two: param
+ * @s1: param
+ * @s2: param
+ * Return: pointer always
+ */
 char *check_if(char *ptr, int count_one, int count_two, char *s1, char *s2)
 {
 	int l, m;

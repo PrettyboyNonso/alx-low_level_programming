@@ -1,5 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * check_else - Entry point
+ * @ptr: param
+ * @count_one: param
+ * @s1: param
+ * @s2: param
+ * @n: param
+ * Return: pointer always
+ */
 char *check_else(char *ptr, int count_one, int n, char *s1, char *s2)
 {
 	int k, j;
