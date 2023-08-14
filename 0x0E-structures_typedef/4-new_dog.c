@@ -7,23 +7,24 @@
  * @name: param
  * @age: param
  * @owner: param
+ * Return: struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
 
 	if (name == NULL || owner == NULL)
-		return NULL;
+		return (NULL);
 
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
-		return NULL;
+		return (NULL);
 
 	new_dog->name = strdup(name);
 	if (new_dog->name == NULL)
 	{
 	free(new_dog);
-	return NULL;
+	return (NULL);
 	}
 
 	new_dog->age = age;
@@ -33,8 +34,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 	free(new_dog->name);
 	free(new_dog);
-	return NULL;
+	return (NULL);
 	}
 
-	return new_dog;
+	return (new_dog);
 }
