@@ -12,7 +12,7 @@ void print_opcodes(unsigned char *start, size_t num_bytes)
 
 	for (i = 0; i < num_bytes; i++)
 	{
-	printf("%02x", start[i]);
+	printf("%02x ", start[i]);
 	}
 	printf("\n");
 }
