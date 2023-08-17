@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
-
+#include "function_pointers.h"
 /**
  * main - Entry point.
  * @argc: The number of arguments.
@@ -37,6 +37,5 @@ int main(int argc, char *argv[])
 	}
 	result = func(a, b);
 	printf("%d\n", result);
-
 	return (0);
 }
