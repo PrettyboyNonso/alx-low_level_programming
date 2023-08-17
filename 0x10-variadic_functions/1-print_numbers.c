@@ -31,7 +31,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		unsigned int result = va_arg(numbers, unsigned int);
 
 		printf("%d", result);
+		if (i < n - 1)
+		{
 		printf("%s", separator);
+		}
 	}
 	printf("\n");
 	va_end(numbers);
