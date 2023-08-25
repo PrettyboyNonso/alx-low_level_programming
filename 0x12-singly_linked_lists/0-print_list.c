@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.hi>
+#include <stdlib.h>
 /**
  * print_list - Entry point
  * @h: param
