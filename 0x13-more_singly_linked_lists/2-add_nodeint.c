@@ -1,5 +1,6 @@
 #include <stddef.h>
 #include "lists.h"
+#include <stdlib.h>
 /**
  * add_nodeint - Function Entry
  * @head: param
