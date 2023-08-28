@@ -1,5 +1,6 @@
 #include <stddef.h>
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_listint - function entry
  * @h: parameter
