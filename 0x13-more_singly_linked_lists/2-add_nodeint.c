@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * add_nodeint - Function Entry
  * @head: param
@@ -20,4 +21,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	temp->next = *head;
 	*head = temp;
 	temp->n = n;
+
+	return (temp);
 }
