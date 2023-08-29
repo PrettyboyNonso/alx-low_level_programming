@@ -3,6 +3,26 @@
 #include <stddef.h>
 #include "lists.h"
 /**
+ * list_lenght - Entry point
+ * @head: param
+ * Return: integer
+ */
+unsigned int list_lenght(listint_t *head)
+{
+	listint_t *temp;
+	temp = head;
+	unsigned int count;
+
+	count = 0;
+
+	while (temp != NULL)
+	{
+		count++;
+		temp = temp->next;
+	}
+	return (count);
+}
+/**
  * get_nodeint_at_index - Entry point
  * @head: param
  * @index: param
