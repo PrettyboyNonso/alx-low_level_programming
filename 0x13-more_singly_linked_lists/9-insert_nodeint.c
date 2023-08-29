@@ -5,6 +5,7 @@
 
 /**
  * insert_nodeint_at_index - Entry point
+ * @head: param
  * @idx: param
  * @n: param
  * Return: a struct
