@@ -1,3 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <stddef.h>
+#include "lists.h"
+/**
+ * pop_listint - Entry point
+ * @head: param
+ * Return: an int
+ */
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
