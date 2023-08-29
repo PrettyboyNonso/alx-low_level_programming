@@ -2,26 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include "lists.h"
-/**
- * list_lenght - Entry point
- * @head: param
- * Return: an integer
- */
-unsigned int list_lenght(listint_t **head)
-{
-	listint_t *temp;
-	unsigned int count;
 
-	count = 0;
-	temp = *head;
-
-	while (temp != NULL)
-	{
-		count++;
-		temp = temp->next;
-	}
-	return (count);
-}
 /**
  * insert_nodeint_at_index - Entry point
  * @idx: param
@@ -30,31 +11,36 @@ unsigned int list_lenght(listint_t **head)
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *temp;
-	listint_t *newNode;
 	unsigned int i;
-	unsigned int listlen;
+	listint_t *new;
+	listint_t *temp = *head;
 
-	newNode = (listint_t *)malloc(sizeof(listint_t));
-	listlen = list_lenght(head);
-	temp = *head;
-	if (idx <= (listlen - 1))
-	{
-		if (newNode == NULL)
-		{
-			return (NULL);
-		}
-		for (i = 0; i < idx; i++)
-		{
-			temp = temp->next;
-		}
-		newNode = temp;
-		newNode->n = n;
-		newNode->next = temp->next;
-	}
-	else
-	{
+	new = malloc(sizeof(listint_t));
+	if (!new || !head)
 		return (NULL);
+
+	new->n = n;
+	new->next = NULL;
+
+	if (idx == 0)
+	{
+		new->next = *head;
+		*head = new;
+		return (new);
 	}
-	return (newNode);
+
+	for (i = 0; temp && i < idx; i++)
+	{
+		if (i == idx - 1)
+		{
+			new->next = temp->next;
+			temp->next = new;
+			return (new);
+		}
+		else
+			temp = temp->next;
+	}
+
+	return (NULL);
 }
+
