@@ -10,10 +10,10 @@
 unsigned int list_lenght(listint_t *head)
 {
 	listint_t *temp;
-	temp = head;
 	unsigned int count;
 
 	count = 0;
+	temp = head;
 
 	while (temp != NULL)
 	{
