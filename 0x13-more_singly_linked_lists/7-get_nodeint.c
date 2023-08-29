@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "lists.h"
 /**
  * get_nodeint_at_index - Entry point
  * @head: param
