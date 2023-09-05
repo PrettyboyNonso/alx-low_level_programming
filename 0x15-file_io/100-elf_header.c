@@ -1,13 +1,7 @@
-define _GNU_SOURCE // for RTLD_NEXT
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include <unistd.h>
+#include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-<<<<<<< HEAD
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -253,7 +247,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
- * Description: If the file cannot be closed - exit code 9.
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
